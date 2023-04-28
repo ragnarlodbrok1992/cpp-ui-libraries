@@ -39,9 +39,6 @@ class cpp_ui_librariesRecipe(ConanFile):
         cmake.install()
 
     def requirements(self):
-        self.requires(["glfw/3.3.8",
-                       "glad/0.1.36"])
-
-    def build_requirements(self):
-        self.tool_requires("cmake/3.23.0")
+        self.requires("glfw/3.3.8")
+        self.requires("glad/0.1.36")
 
