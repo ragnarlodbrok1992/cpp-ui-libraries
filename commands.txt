@@ -1,0 +1,9 @@
+Setting up project:
+1. conan new -d name=cpp-ui-libraries -d version=1.0 cmake_exe
+
+Building project:
+1. conan install . -s build_type=Debug
+2. cmake --preset conan-default
+3. cmake --build --preset conan-debug
+4. ./build/Debug/cpp-ui-libraries.exe
+
