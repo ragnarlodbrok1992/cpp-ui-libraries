@@ -1,6 +1,6 @@
 @echo off
-rmdir /s /q build\
-rem CMakeUserPresets.json
+rem NOT -  rmdir /s /q build\
+rem NOT - rm CMakeUserPresets.json
 
 conan install . -s build_type=Debug --build=missing
 cmake --preset conan-default
